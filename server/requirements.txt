@@ -1,0 +1,11 @@
+together
+pillow
+requests
+flask
+flask-cors
+easyocr
+opencv-python
+torch
+PyMuPDF
+dotenv
+numpy
