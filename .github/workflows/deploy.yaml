@@ -41,7 +41,7 @@ jobs:
             sudo docker pull saiabhiramjaini/data-extractor-server:latest
             sudo docker stop data-extractor-server || true
             sudo docker rm data-extractor-server || true
-            sudo docker run -d -p 5001:5001
+            sudo docker run -d -p 5001:5001 \
               -e TOGETHER_AI_API_KEY=${{ secrets.ENV_TOGETHER_API_KEY }} \
               --name data-extractor-server saiabhiramjaini/data-extractor-server:latest
   
